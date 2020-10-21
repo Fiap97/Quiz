@@ -1,8 +1,8 @@
 "use strict";
 window.onload = function () {
     console.log("entro");
-    var EventoOnClick = document.getElementById('inicio');
+    var EventoOnClick = document.getElementById(id);
     EventoOnClick.onclick = function () {
-        console.log("dio click");
+        console.log(EventoOnClick === null || EventoOnClick === void 0 ? void 0 : EventoOnClick.innerHTML);
     };
 };
